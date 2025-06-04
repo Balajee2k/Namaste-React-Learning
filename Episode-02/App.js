@@ -1,0 +1,30 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+/* Lets see if we have to make this type of complex div
+   or element then how we do it in core react
+    <div id="parent">
+        <div id="child">
+            <h1>This is a h1 tag</h1>
+            <h2>This is a h2 tag</h2>
+        </div>    
+    </div>     
+*/
+
+const parent = React.createElement(
+    "div",
+    {id:"parent"},
+    React.createElement("div",{id:"Child"},
+        [
+            React.createElement("h1",{},"I am h1 tag"),
+            React.createElement("h2",{},"I am h2 tag"),
+        ]
+    )
+);
+
+console.log(parent);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+//render is basically for replacing whaterver you write in div of root 
+root.render(parent);
+
+//Note: React is library not framework bcz its also apply to the small part of html like in card also or anywhere but a framework  is the thing that work only in full condition(framework comw with lot of baggage).

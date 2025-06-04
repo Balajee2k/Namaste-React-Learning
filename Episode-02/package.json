@@ -1,0 +1,29 @@
+{
+  "name": "episode-02",
+  "version": "1.0.0",
+  "description": "EP2",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Balajee2k/Namaste-React-Learning.git"
+  },
+  "author": "Balajee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Balajee2k/Namaste-React-Learning/issues"
+  },
+  "homepage": "https://github.com/Balajee2k/Namaste-React-Learning#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserslist": [
+    "last 2 chrome versions",
+    "last 2 firefox versions"
+  ]
+}
