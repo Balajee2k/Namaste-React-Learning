@@ -1,7 +1,7 @@
  ## This is My second episode
   In which talk about how we ignite our own react app through using bundlers and make production ready to my own created react app.
  
-  In this we create our react app using npm like mainly i said we use parcel like vite (parcel is used) instead of creatinf manual react and using through cdn links like importing script and all   
+  In this we create our react app using npm like mainly i said we use parcel like vite (parcel is used) instead of Creating manual React(Using Create React App) and using through cdn links like importing script and All
 
  ## Question that arises:(imp concept)
  - Npm =manage node packge
