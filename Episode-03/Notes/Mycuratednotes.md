@@ -25,13 +25,11 @@
     Code Generation: Finally, Babel generates JavaScript code from the transformed AST. This is the final JavaScript output that browsers can execute.
 
 ## Q. React component
-A; Building blocks of user interfaces in React applications. They are reusable, independent pieces of code that encapsulate a specific part of
+A: Building blocks of user interfaces in React applications. They are reusable, independent pieces of code that encapsulate a specific part of
   the UI. Components can be thought of as JavaScript functions or classes that take in data (props) and return React elements that describe
   what should be displayed on the screen.
 
-### There are two primary types of components in React:
-    -Function Components (newer):
-- **There are two primary types of components in React**: 
+### There are two primary types of components in React: 
     -Function Components (newer):
     These are JavaScript functions that accept props as input and return JSX elements. They are often used for simpler, stateless components.
     -Class Components (older):
@@ -50,6 +48,10 @@ A; Building blocks of user interfaces in React applications. They are reusable, 
 | We cannot use React Hooks with elements as elements are immutable. | React hooks can be used only with functional components. |
 | Elements are light, stateless, and hence faster. | It is comparatively slower than elements. |
 
+- Component names always start with a capital letter, but for elements, this is not necessary.
+- A functional component is rendered like this: root.render(<HeadingComponent2/>) not 
+  like this: root.render(heading);
+  
 ## How do you do JavaScript operations inside JSX?
 
 See how we inject JavaScript into JSX:
@@ -64,7 +66,4 @@ const jsxWithJs = (
     </div>
 );
 ```
-- Similarly, if we have to inject a React element into a component, we also do it by using {parent}
-  because it's a normal JavaScript variable, as a React element is a JS object.
-
 - Similarly, if we have to inject a React element into a component, we also do it by using {parent} because it's a normal JavaScript variable, as a React element is a JS object.
