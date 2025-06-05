@@ -27,10 +27,10 @@
   the UI. Components can be thought of as JavaScript functions or classes that take in data (props) and return React elements that describe
   what should be displayed on the screen.
 
-- **There are two primary types of components in React**: 
-    Function Components (newer):
+### There are two primary types of components in React:
+    -Function Components (newer):
     These are JavaScript functions that accept props as input and return JSX elements. They are often used for simpler, stateless components.
-    Class Components (older):
+    -Class Components (older):
     These are ES6 classes that extend from React.Component. They can manage their own internal state and have lifecycle methods.
 
 ## Difference between React element and React component
