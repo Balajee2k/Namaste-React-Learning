@@ -51,6 +51,8 @@
 }
 .res-card:hover {
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
 }
 .res-logo{
     width:100%;
@@ -66,3 +68,11 @@
     margin: 4px 0;
     
 }
+/* Top rated button css */
+.filter-btn {
+    padding: 10px;
+
+    cursor: pointer;
+    margin: 10px;
+}
+

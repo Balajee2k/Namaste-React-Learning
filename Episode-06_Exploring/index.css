@@ -1,0 +1,78 @@
+/* Header Css*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    padding:5px;
+    margin:5px;
+}
+.logo{
+     width: 100px;
+     height: 100px;
+     margin: 10px;
+}
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+     
+}
+.nav-items > ul > li {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*Body Css */
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 240px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    background: #f0f0f0;
+    margin: 20px 0 0 10px;
+}
+
+.search{
+    padding: 10px;
+}
+.res-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+.res-logo{
+    width:100%;
+    margin-bottom: 6px;
+}
+.res-card h3,
+.res-card h4 {
+    margin: 4px 0; /* Reduce vertical margin for headings */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+    text-align: center;
+    margin: 4px 0;
+    
+}
+/* Top rated button css */
+.filter-btn {
+    padding: 10px;
+
+    cursor: pointer;
+    margin: 10px;
+}
+

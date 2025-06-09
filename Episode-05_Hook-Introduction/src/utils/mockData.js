@@ -1,5 +1,3 @@
-import RestaurantCard from "./RestaurantCard";
-
 // Restaurant list data (mock data for demo)
 const resList =
     [
@@ -166,7 +164,7 @@ const resList =
                     "Thalis",
                     "North Indian"
                 ],
-                "avgRating": 4.1,
+                "avgRating": 3.1,
                 "parentId": "89405",
                 "avgRatingString": "4.1",
                 "totalRatingsString": "5.9K+",
@@ -336,7 +334,7 @@ const resList =
                     "Bakery",
                     "North Indian"
                 ],
-                "avgRating": 4.5,
+                "avgRating": 1.5,
                 "veg": true,
                 "parentId": "472621",
                 "avgRatingString": "4.5",
@@ -650,7 +648,7 @@ const resList =
                 "cuisines": [
                     "Pastas"
                 ],
-                "avgRating": 4.3,
+                "avgRating": 3.9,
                 "parentId": "306806",
                 "avgRatingString": "4.3",
                 "totalRatingsString": "46",
@@ -943,7 +941,7 @@ const resList =
                     "Beverages",
                     "Cakes"
                 ],
-                "avgRating": 4.3,
+                "avgRating": 3.3,
                 "parentId": "66732",
                 "avgRatingString": "4.3",
                 "totalRatingsString": "233",
@@ -1200,7 +1198,7 @@ const resList =
                     "Mughlai",
                     "Kebabs"
                 ],
-                "avgRating": 4.3,
+                "avgRating": 3.8,
                 "parentId": "5070",
                 "avgRatingString": "4.3",
                 "totalRatingsString": "15K+",
@@ -1415,22 +1413,4 @@ const resList =
         }
     ];
 
-const Body = () => {
-    return (
-        <div className="body">
-            <div className="SearchBar">
-                <input className="search" type="text" placeholder="Search for restaurants, cuisines, or a dish" />
-            </div>
-            <div className="res-container">
-                {// Map over resList and render RestaurantCard for each restaurant
-                }
-                {resList.map((restaurant) => (
-                    <RestaurantCard key={restaurant.info.id} resData={restaurant} />
-                ))}
-
-            </div>
-        </div>
-    )
-}
-
-export default Body;
+export default resList; 
