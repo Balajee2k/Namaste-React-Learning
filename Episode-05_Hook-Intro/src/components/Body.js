@@ -1,44 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-/* Structure of Food Ordering App
-Header:
-    -Logo
-    -Nav Items
-Body:
-    -Search Bar
-    -Restaurant Container
-        -Restaurant Card
-            -Img
-            -Name Of Res, Star rating  , Cuisine, delery time
-Footer:
-    -CopyRight
-    -Address
-    -Links
-    -Contacts
-*/
-
-const Header = () => {
-    return (
-        <div className="header">
-            <div className="logo-container">
-                <img
-                    className="logo"
-                    src="https://png.pngtree.com/template/20191014/ourmid/pngtree-pin-food-delivery-map-location-delivery-logo-concept-image_318151.jpg" alt="logo"
-                />
-            </div>
-            <div className="nav-items">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-};
-
+import RestaurantCard from "./RestaurantCard";
 
 // Restaurant list data (mock data for demo)
 const resList =
@@ -1455,27 +1415,6 @@ const resList =
         }
     ];
 
-// RestaurantCard component: reusable card for each restaurant
-const RestaurantCard = (props) => {
-    const { resData } = props;
-    return (
-        <div className="res-card">
-            <img
-                className="res-logo"
-                src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+resData.info.cloudinaryImageId}
-                alt="res-logo"
-            />
-            <h3>{resData.info.name}</h3>
-            <h4>{resData.info.cuisines.join(",")}</h4>
-            <h4>{resData.info.avgRating}⭐</h4>
-            <h4>{resData.info.costForTwo}</h4>
-            <h4>{resData.info.sla.deliveryTime} mins</h4>
-        </div>
-
-    )
-}
-
-
 const Body = () => {
     return (
         <div className="body">
@@ -1494,13 +1433,4 @@ const Body = () => {
     )
 }
 
-const AppLayout = () => {
-    return <div className="app">
-        <Header />
-        <Body />
-    </div>
-}
-
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export default Body;
