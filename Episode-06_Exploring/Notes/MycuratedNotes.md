@@ -1,18 +1,18 @@
-### Monolithic vs Microservices
+### Q.Monolithic vs Microservices
 - **Monolithic Architecture**: A single, unified codebase where all components are interconnected and interdependent. Easier to develop initially but harder to scale and maintain as the application grows.
 - **Microservices Architecture**: An approach where the application is divided into smaller, independent services that communicate over a network. Each service can be developed, deployed, and scaled independently, allowing for greater flexibility and resilience.
 
-### Key Differences
+  **Key Differences**
 - **Development**: Monolithic applications are easier to develop initially due to their simplicity, while microservices require more upfront design and architecture planning.
 - **Scalability**: Microservices allow for independent scaling of services, while monolithic applications require scaling the entire application.
 - **Deployment**: Microservices can be deployed independently, allowing for faster updates and rollbacks. Monolithic applications require redeploying the entire application for any change.
 - **Fault Isolation**: In microservices, if one service fails, it does not necessarily bring down the entire application. In a monolithic architecture, a failure in one part can affect the whole system.
 
-### When to Use Each
+  **When to Use Each**
 - **Monolithic**: Best for small to medium-sized applications where rapid development is needed, and the team is small. It can be easier to manage and deploy.
 - **Microservices**: Ideal for large, complex applications that require scalability, flexibility, and independent deployment. It is suitable for teams that can manage the complexity of distributed systems.
 
-### Two ways to fetch the data in the UI
+### 2.Two ways to fetch the data in the UI
 - First way: Load -> API -> Render: In this approach, the UI fetches data from the API and then renders it. This is a straightforward method but can lead to performance issues if the API is slow or if there are many requests.
 - Second way: Load -> Render -> API -> Re-Render: In this approach, the UI renders first and then fetches data from the API. This can improve perceived performance as the UI is responsive while data is being fetched, but it requires careful handling of loading states and potential data inconsistencies.
 - In React, we are using the second way.
@@ -40,7 +40,7 @@ function ExampleComponent() {
 Now you see here why we use the useEffect() hook, because it is called after the component render cycle. If we put the API call inside the component, then it will be called before the render cycle and we will not get the data in the UI.
 So basically, for using the second way of fetching the data, we need to use the useEffect() hook.
 
-### What is CORS?
+### Q.What is CORS?
 - **CORS (Cross-Origin Resource Sharing)**: A security feature implemented by web browsers to prevent malicious websites from making requests to a different domain than the one that served the web page. It allows servers to specify who can access their resources and how.
 
 - **How CORS Works**: When a web page makes a request to a different domain (cross-origin), the browser sends an HTTP request with an `Origin` header. The server can respond with specific headers (`Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, etc.) to indicate whether the request is allowed. If the response does not include the appropriate headers, the browser will block the request.
