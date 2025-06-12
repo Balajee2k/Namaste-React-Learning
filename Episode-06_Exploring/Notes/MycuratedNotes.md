@@ -6,7 +6,7 @@
 - **Development**: Monolithic applications are easier to develop initially due to their simplicity, while microservices require more upfront design and architecture planning.
 - **Scalability**: Microservices allow for independent scaling of services, while monolithic applications require scaling the entire application.
 - **Deployment**: Microservices can be deployed independently, allowing for faster updates and rollbacks. Monolithic applications require redeploying the entire application for any change.
-- **Fault Isolation**: In microservices, if one service fails, it does not necessarily bring down the entire application. In a monolithic architecture, a failure in one part can affect the whole system.
+- **Fault Isolation**: In microservices, if one service fails, it does not necessarily bring down the entire application. In a monolithic architecture, a failure in one part can affect the whole system
 
   **When to Use Each**
 - **Monolithic**: Best for small to medium-sized applications where rapid development is needed, and the team is small. It can be easier to manage and deploy.
