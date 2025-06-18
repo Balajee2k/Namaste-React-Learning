@@ -1,0 +1,3 @@
+- In this Episode we are styling and make beautiful our app.
+- there are various methods to add styles to our app.
+- we can use css, sass, styled-components.

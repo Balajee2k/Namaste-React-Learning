@@ -1,0 +1,252 @@
+/* Header Css*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    padding:5px;
+    margin:5px;
+}
+.logo{
+     width: 100px;
+     height: 100px;
+     margin: 10px;
+}
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+     
+}
+.nav-items > ul > li {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Fix Link styling */
+.res-container a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.res-container a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Body Css - Updated for consistent card layout */
+.res-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.res-card{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: #fff;
+    transition: all 0.3s ease;
+    height: 100%; /* Ensure all cards have same height */
+}
+
+.search{
+    padding: 10px;
+}
+
+.res-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transform: translateY(-4px);
+}
+
+.res-logo{
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.res-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 8px 0 4px 0;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.res-card h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 4px 0;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.res-card p {
+    font-size: 14px;
+    color: #888;
+    margin: 4px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Rating and delivery time styling */
+.res-card .rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto; /* Push to bottom */
+    padding-top: 12px;
+}
+
+.res-card .rating span {
+    background: #48c479;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Filter section */
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-box {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 300px;
+}
+
+.search-btn, .filter-btn {
+    padding: 12px 20px;
+    background: #ff6b35;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.search-btn:hover, .filter-btn:hover {
+    background: #e55a2b;
+}
+
+/* Shimmer/Skeleton Loading CSS */
+.shimmer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.shimmer-card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background: #fff;
+    height: 350px; /* Fixed height similar to res-card */
+}
+
+.shimmer-img {
+    width: 100%;
+    height: 200px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.shimmer-line {
+    height: 16px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+
+.shimmer-animate {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+/* About us Page css */
+.user-card{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .res-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 16px;
+        padding: 16px;
+    }
+    
+    .filter {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .search {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .search-box {
+        width: 100%;
+    }
+}
+
+/* Responsive shimmer */
+@media (max-width: 768px) {
+    .shimmer-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 16px;
+        padding: 16px;
+    }
+}
+
