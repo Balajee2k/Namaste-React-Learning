@@ -72,7 +72,7 @@ const Body = () => {
             </div>
 
 
-            <div className="res-container flex flex-wrap">
+            <div className="res-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 px-4 py-6">
                 {filteredRestaurant.map((restaurant) => (
                     <Link to={"/restaurant/" + restaurant.info.id} key={restaurant.info.id}>
                         <RestaurantCard resData={restaurant} />
