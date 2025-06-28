@@ -13,8 +13,13 @@ const cartSlice=createSlice({
         removeItem:(state,action)=>{
             state.items=state.items.filter(item=>item.id!==action.payload.id);
         },
+        //Here original state :{items:["pizza"]}
         clearCart:(state)=>{
             state.items.length = 0;
+            /*
+            instead of you can also return with empty object like this
+            return { items: [] }; ->This new obj will be replaced inside originalState={}
+            */
         }
     }    
 
