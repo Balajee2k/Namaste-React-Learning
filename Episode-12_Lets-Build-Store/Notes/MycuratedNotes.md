@@ -320,6 +320,9 @@ const cartItems = store.cart.items; // This is very inefficient
   ```
 - But Internally when you are using Redux Toolkit, it still ensures immutability by using Immer, so you can safely mutate the state without worrying about breaking immutability rules.(means still first make a copy of state and then mutate it by finding diff between actual state and new state).
 Thats why when you use state=[], directly in CartSlice like in clearcart logic when you do directly state=["bala"] then its not working because its not muatating the state its just give refrence.
+
+#### Redux Devtools: You have to install extension thats known as Redux Devtools
+
 ---
 ## Summary
 
